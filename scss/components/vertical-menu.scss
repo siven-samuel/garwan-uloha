@@ -1,0 +1,54 @@
+/* Vertical menu */
+
+.menu {
+	ul {
+		li {
+			a {
+				position: relative;
+				line-height: 29px;
+				overflow: hidden;
+				display: block;
+				padding: 10px 10px 10px 50px;
+				text-decoration: none;
+				color: #737373;
+				transition-duration: 0.5s;
+				-webkit-transition-duration: 0.5s; /* Safari */
+				
+			
+				i {
+					padding: 13px;
+					position: absolute;
+					top: 0;
+					left:0;
+				}
+			
+			
+				&:hover {
+					background-color: #f1f1f1;
+				}
+							
+				&::after {
+					content: "";
+					display: block;
+					height: 10px;
+					width: 100%;
+					background-color: #ececec;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					opacity:0;
+				}
+				
+				&:hover::after {
+					opacity: 1;
+				}
+			
+			}
+			
+			.active {
+				color: #212121;
+			}
+
+		}
+	}
+}
